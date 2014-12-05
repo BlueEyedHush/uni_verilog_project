@@ -1,0 +1,13 @@
+^db
+^incremental_db
+.*.bak$
+.*.rpt$
+.*.done$
+.*.qarlog$
+.*.summary$
+^\timing\
+.*.cmp$
+.*.dpf$
+.*.eqn$
+.*.qar$
+

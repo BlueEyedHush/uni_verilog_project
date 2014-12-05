@@ -1,0 +1,285 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ------------------------------------------------------------------------------
+
+
+
+ ------------------------------------------------------------------------------
+ -- NC         : No Connect. This pin has no internal connection to the device.
+ -- VCC_INT    : Dedicated power pin, which MUST be connected to VCC  (5.0V).
+ -- VCC_IO     : Dedicated power pin, which MUST be connected to VCC  (Refer to
+ --              the table below for voltage).
+ -- GND        : Dedicated ground pin, which MUST be connected to GND.
+ -- GND+       : Unused input. This pin should be connected to GND. It may also
+ --              be connected  to a  valid signal  on the board  (low, high, or
+ --              toggling)  if that signal is required for a different revision
+ --              of the design.
+ -- GND*       : Unused  I/O  pin.   This pin can either be left unconnected or
+ --              connected to GND.  Connecting this pin to GND will improve the
+ --              device's immunity to noise.
+ -- RESERVED_INPUT : Pin is tri-stated and should be connected to the board.
+ ------------------------------------------------------------------------------
+
+
+File Generation Date & Time: Fri Dec  5 10:40:11 2014
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+CHIP  "UP2_TOP"  ASSIGNED TO AN: EPF10K70RC240-4
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+TCK                          : 1         : input  :                   :         :           :                
+CONF_DONE                    : 2         : bidir  :                   :         :           :                
+nCEO                         : 3         : output :                   :         :           :                
+TDO                          : 4         : output :                   :         :           :                
+VCC_INT                      : 5         : power  :                   : 5.0V    :           :                
+FLEX_DIGIT_1[0]              : 6         : output : TTL               :         :           : Y              
+FLEX_DIGIT_1[1]              : 7         : output : TTL               :         :           : Y              
+FLEX_DIGIT_1[2]              : 8         : output : TTL               :         :           : Y              
+FLEX_DIGIT_1[3]              : 9         : output : TTL               :         :           : Y              
+GND_INT                      : 10        : gnd    :                   :         :           :                
+FLEX_DIGIT_1[4]              : 11        : output : TTL               :         :           : Y              
+FLEX_DIGIT_1[5]              : 12        : output : TTL               :         :           : Y              
+FLEX_DIGIT_1[6]              : 13        : output : TTL               :         :           : Y              
+FLEX_DIGIT_1_DP              : 14        : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 15        :        :                   :         :           :                
+VCC_INT                      : 16        : power  :                   : 5.0V    :           :                
+FLEX_DIGIT_2[0]              : 17        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2[1]              : 18        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2[2]              : 19        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2[3]              : 20        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2[4]              : 21        : output : TTL               :         :           : Y              
+GND_INT                      : 22        : gnd    :                   :         :           :                
+FLEX_DIGIT_2[5]              : 23        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2[6]              : 24        : output : TTL               :         :           : Y              
+FLEX_DIGIT_2_DP              : 25        : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 26        :        :                   :         :           :                
+VCC_INT                      : 27        : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 28        :        :                   :         :           :                
+RESERVED_INPUT               : 29        :        :                   :         :           :                
+FLEX_MOUSE_CLK               : 30        : bidir  : TTL               :         :           : Y              
+FLEX_MOUSE_DATA              : 31        : bidir  : TTL               :         :           : Y              
+GND_INT                      : 32        : gnd    :                   :         :           :                
+RESERVED_INPUT               : 33        :        :                   :         :           :                
+RESERVED_INPUT               : 34        :        :                   :         :           :                
+RESERVED_INPUT               : 35        :        :                   :         :           :                
+RESERVED_INPUT               : 36        :        :                   :         :           :                
+VCC_INT                      : 37        : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 38        :        :                   :         :           :                
+RESERVED_INPUT               : 39        :        :                   :         :           :                
+RESERVED_INPUT               : 40        :        :                   :         :           :                
+RESERVED_INPUT               : 41        :        :                   :         :           :                
+GND_INT                      : 42        : gnd    :                   :         :           :                
+RESERVED_INPUT               : 43        :        :                   :         :           :                
+RESERVED_INPUT               : 44        :        :                   :         :           :                
+LED[14]                      : 45        : output : TTL               :         :           : Y              
+LED[15]                      : 46        : output : TTL               :         :           : Y              
+VCC_INT                      : 47        : power  :                   : 5.0V    :           :                
+LED[12]                      : 48        : output : TTL               :         :           : Y              
+LED[13]                      : 49        : output : TTL               :         :           : Y              
+SW[6]                        : 50        : input  : TTL               :         :           : Y              
+SW[7]                        : 51        : input  : TTL               :         :           : Y              
+GND_INT                      : 52        : gnd    :                   :         :           :                
+LED[10]                      : 53        : output : TTL               :         :           : Y              
+LED[11]                      : 54        : output : TTL               :         :           : Y              
+LED[8]                       : 55        : output : TTL               :         :           : Y              
+LED[9]                       : 56        : output : TTL               :         :           : Y              
+VCC_INT                      : 57        : power  :                   : 5.0V    :           :                
+TMS                          : 58        : input  :                   :         :           :                
+TRST                         : 59        : input  :                   :         :           :                
+nSTATUS                      : 60        : bidir  :                   :         :           :                
+SW[4]                        : 61        : input  : TTL               :         :           : Y              
+SW[5]                        : 62        : input  : TTL               :         :           : Y              
+LED[6]                       : 63        : output : TTL               :         :           : Y              
+LED[7]                       : 64        : output : TTL               :         :           : Y              
+LED[4]                       : 65        : output : TTL               :         :           : Y              
+LED[5]                       : 66        : output : TTL               :         :           : Y              
+SW[2]                        : 67        : input  : TTL               :         :           : Y              
+SW[3]                        : 68        : input  : TTL               :         :           : Y              
+GND_INT                      : 69        : gnd    :                   :         :           :                
+RESERVED_INPUT               : 70        :        :                   :         :           :                
+RESERVED_INPUT               : 71        :        :                   :         :           :                
+RESERVED_INPUT               : 72        :        :                   :         :           :                
+RESERVED_INPUT               : 73        :        :                   :         :           :                
+RESERVED_INPUT               : 74        :        :                   :         :           :                
+RESERVED_INPUT               : 75        :        :                   :         :           :                
+RESERVED_INPUT               : 76        :        :                   :         :           :                
+VCC_INT                      : 77        : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 78        :        :                   :         :           :                
+LED[3]                       : 79        : output : TTL               :         :           : Y              
+LED[2]                       : 80        : output : TTL               :         :           : Y              
+LED[1]                       : 81        : output : TTL               :         :           : Y              
+LED[0]                       : 82        : output : TTL               :         :           : Y              
+SW[1]                        : 83        : input  : TTL               :         :           : Y              
+SW[0]                        : 84        : input  : TTL               :         :           : Y              
+GND_INT                      : 85        : gnd    :                   :         :           :                
+RESERVED_INPUT               : 86        :        :                   :         :           :                
+RESERVED_INPUT               : 87        :        :                   :         :           :                
+BT[1]                        : 88        : input  : TTL               :         :           : Y              
+VCC_INT                      : 89        : power  :                   : 5.0V    :           :                
+GND+                         : 90        :        :                   :         :           :                
+MCLK                         : 91        : input  : TTL               :         :           : Y              
+GND+                         : 92        :        :                   :         :           :                
+GND_INT                      : 93        : gnd    :                   :         :           :                
+RESERVED_INPUT               : 94        :        :                   :         :           :                
+BT[3]                        : 95        : input  : TTL               :         :           : Y              
+VCC_INT                      : 96        : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 97        :        :                   :         :           :                
+BT[0]                        : 98        : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 99        :        :                   :         :           :                
+BT[2]                        : 100       : input  : TTL               :         :           : Y              
+RESERVED_INPUT               : 101       :        :                   :         :           :                
+RESERVED_INPUT               : 102       :        :                   :         :           :                
+RESERVED_INPUT               : 103       :        :                   :         :           :                
+GND_INT                      : 104       : gnd    :                   :         :           :                
+RESERVED_INPUT               : 105       :        :                   :         :           :                
+RESERVED_INPUT               : 106       :        :                   :         :           :                
+RESERVED_INPUT               : 107       :        :                   :         :           :                
+RESERVED_INPUT               : 108       :        :                   :         :           :                
+MATRIX_COL[7]                : 109       : output : TTL               :         :           : Y              
+MATRIX_COL[6]                : 110       : output : TTL               :         :           : Y              
+MATRIX_COL[1]                : 111       : output : TTL               :         :           : Y              
+VCC_INT                      : 112       : power  :                   : 5.0V    :           :                
+MATRIX_COL[0]                : 113       : output : TTL               :         :           : Y              
+MATRIX_COL[2]                : 114       : output : TTL               :         :           : Y              
+MATRIX_COL[5]                : 115       : output : TTL               :         :           : Y              
+MATRIX_COL[4]                : 116       : output : TTL               :         :           : Y              
+MATRIX_COL[3]                : 117       : output : TTL               :         :           : Y              
+MATRIX_COL[15]               : 118       : output : TTL               :         :           : Y              
+MATRIX_COL[14]               : 119       : output : TTL               :         :           : Y              
+MATRIX_COL[9]                : 120       : output : TTL               :         :           : Y              
+nCONFIG                      : 121       : input  :                   :         :           :                
+VCC_INT                      : 122       : power  :                   : 5.0V    :           :                
+MSEL1                        : 123       : input  :                   :         :           :                
+MSEL0                        : 124       : input  :                   :         :           :                
+GND_INT                      : 125       : gnd    :                   :         :           :                
+MATRIX_COL[8]                : 126       : output : TTL               :         :           : Y              
+MATRIX_COL[10]               : 127       : output : TTL               :         :           : Y              
+MATRIX_COL[13]               : 128       : output : TTL               :         :           : Y              
+MATRIX_COL[12]               : 129       : output : TTL               :         :           : Y              
+VCC_INT                      : 130       : power  :                   : 5.0V    :           :                
+MATRIX_COL[11]               : 131       : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 132       :        :                   :         :           :                
+RESERVED_INPUT               : 133       :        :                   :         :           :                
+MATRIX_ROW[7]                : 134       : output : TTL               :         :           : Y              
+GND_INT                      : 135       : gnd    :                   :         :           :                
+MATRIX_ROW[6]                : 136       : output : TTL               :         :           : Y              
+MATRIX_ROW[5]                : 137       : output : TTL               :         :           : Y              
+MATRIX_ROW[4]                : 138       : output : TTL               :         :           : Y              
+MATRIX_ROW[3]                : 139       : output : TTL               :         :           : Y              
+VCC_INT                      : 140       : power  :                   : 5.0V    :           :                
+MATRIX_ROW[2]                : 141       : output : TTL               :         :           : Y              
+MATRIX_ROW[1]                : 142       : output : TTL               :         :           : Y              
+MATRIX_ROW[0]                : 143       : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 144       :        :                   :         :           :                
+GND_INT                      : 145       : gnd    :                   :         :           :                
+RESERVED_INPUT               : 146       :        :                   :         :           :                
+RESERVED_INPUT               : 147       :        :                   :         :           :                
+RESERVED_INPUT               : 148       :        :                   :         :           :                
+RESERVED_INPUT               : 149       :        :                   :         :           :                
+VCC_INT                      : 150       : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 151       :        :                   :         :           :                
+RESERVED_INPUT               : 152       :        :                   :         :           :                
+RESERVED_INPUT               : 153       :        :                   :         :           :                
+RESERVED_INPUT               : 154       :        :                   :         :           :                
+GND_INT                      : 155       : gnd    :                   :         :           :                
+RESERVED_INPUT               : 156       :        :                   :         :           :                
+RESERVED_INPUT               : 157       :        :                   :         :           :                
+RESERVED_INPUT               : 158       :        :                   :         :           :                
+RESERVED_INPUT               : 159       :        :                   :         :           :                
+VCC_INT                      : 160       : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 161       :        :                   :         :           :                
+RESERVED_INPUT               : 162       :        :                   :         :           :                
+RESERVED_INPUT               : 163       :        :                   :         :           :                
+RESERVED_INPUT               : 164       :        :                   :         :           :                
+GND_INT                      : 165       : gnd    :                   :         :           :                
+RESERVED_INPUT               : 166       :        :                   :         :           :                
+RESERVED_INPUT               : 167       :        :                   :         :           :                
+RESERVED_INPUT               : 168       :        :                   :         :           :                
+RESERVED_INPUT               : 169       :        :                   :         :           :                
+VCC_INT                      : 170       : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 171       :        :                   :         :           :                
+RESERVED_INPUT               : 172       :        :                   :         :           :                
+RESERVED_INPUT               : 173       :        :                   :         :           :                
+RESERVED_INPUT               : 174       :        :                   :         :           :                
+RS232_RTS                    : 175       : output : TTL               :         :           : Y              
+GND_INT                      : 176       : gnd    :                   :         :           :                
+TDI                          : 177       : input  :                   :         :           :                
+nCE                          : 178       : input  :                   :         :           :                
+DCLK                         : 179       : bidir  :                   :         :           :                
+DATA0                        : 180       : input  :                   :         :           :                
+RS232_CTS                    : 181       : input  : TTL               :         :           : Y              
+RS232_RX                     : 182       : input  : TTL               :         :           : Y              
+RS232_TX                     : 183       : output : TTL               :         :           : Y              
+PS2_DATA                     : 184       : bidir  : TTL               :         :           : Y              
+PS2_CLK                      : 185       : bidir  : TTL               :         :           : Y              
+DISP4_DP                     : 186       : output : TTL               :         :           : Y              
+DISP4[1]                     : 187       : output : TTL               :         :           : Y              
+DISP4[2]                     : 188       : output : TTL               :         :           : Y              
+VCC_INT                      : 189       : power  :                   : 5.0V    :           :                
+DISP4[0]                     : 190       : output : TTL               :         :           : Y              
+DISP4[5]                     : 191       : output : TTL               :         :           : Y              
+DISP4[3]                     : 192       : output : TTL               :         :           : Y              
+DISP4[6]                     : 193       : output : TTL               :         :           : Y              
+DISP4[4]                     : 194       : output : TTL               :         :           : Y              
+DISP3_DP                     : 195       : output : TTL               :         :           : Y              
+DISP3[1]                     : 196       : output : TTL               :         :           : Y              
+GND_INT                      : 197       : gnd    :                   :         :           :                
+DISP3[2]                     : 198       : output : TTL               :         :           : Y              
+DISP3[0]                     : 199       : output : TTL               :         :           : Y              
+DISP3[5]                     : 200       : output : TTL               :         :           : Y              
+DISP3[3]                     : 201       : output : TTL               :         :           : Y              
+DISP3[6]                     : 202       : output : TTL               :         :           : Y              
+DISP3[4]                     : 203       : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 204       :        :                   :         :           :                
+VCC_INT                      : 205       : power  :                   : 5.0V    :           :                
+RESERVED_INPUT               : 206       :        :                   :         :           :                
+DISP2_DP                     : 207       : output : TTL               :         :           : Y              
+DISP2[1]                     : 208       : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 209       :        :                   :         :           :                
+GND+                         : 210       :        :                   :         :           :                
+GND+                         : 211       :        :                   :         :           :                
+GND+                         : 212       :        :                   :         :           :                
+RESERVED_INPUT               : 213       :        :                   :         :           :                
+DISP2[2]                     : 214       : output : TTL               :         :           : Y              
+DISP2[0]                     : 215       : output : TTL               :         :           : Y              
+GND_INT                      : 216       : gnd    :                   :         :           :                
+DISP2[5]                     : 217       : output : TTL               :         :           : Y              
+DISP2[3]                     : 218       : output : TTL               :         :           : Y              
+DISP2[6]                     : 219       : output : TTL               :         :           : Y              
+DISP2[4]                     : 220       : output : TTL               :         :           : Y              
+RESERVED_INPUT               : 221       :        :                   :         :           :                
+RESERVED_INPUT               : 222       :        :                   :         :           :                
+DISP1_DP                     : 223       : output : TTL               :         :           : Y              
+VCC_INT                      : 224       : power  :                   : 5.0V    :           :                
+DISP1[1]                     : 225       : output : TTL               :         :           : Y              
+DISP1[2]                     : 226       : output : TTL               :         :           : Y              
+DISP1[0]                     : 227       : output : TTL               :         :           : Y              
+DISP1[5]                     : 228       : output : TTL               :         :           : Y              
+DISP1[3]                     : 229       : output : TTL               :         :           : Y              
+DISP1[6]                     : 230       : output : TTL               :         :           : Y              
+DISP1[4]                     : 231       : output : TTL               :         :           : Y              
+GND_INT                      : 232       : gnd    :                   :         :           :                
+RESERVED_INPUT               : 233       :        :                   :         :           :                
+RESERVED_INPUT               : 234       :        :                   :         :           :                
+RESERVED_INPUT               : 235       :        :                   :         :           :                
+VGA_RED                      : 236       : output : TTL               :         :           : Y              
+VGA_GREEN                    : 237       : output : TTL               :         :           : Y              
+VGA_BLUE                     : 238       : output : TTL               :         :           : Y              
+VGA_VSYNC                    : 239       : output : TTL               :         :           : Y              
+VGA_HSYNC                    : 240       : output : TTL               :         :           : Y              
