@@ -1,13 +1,13 @@
-^db
-^incremental_db
+^db/
+^incremental_db/
 .*.bak$
 .*.rpt$
 .*.done$
 .*.qarlog$
 .*.summary$
-^\timing\
+^timing/
 .*.cmp$
 .*.dpf$
 .*.eqn$
 .*.qar$
-
+^out/
