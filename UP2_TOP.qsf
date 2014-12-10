@@ -177,3 +177,4 @@ set_global_assignment -name VERILOG_FILE state_programming.v
 set_global_assignment -name VERILOG_FILE timer_main.v
 set_global_assignment -name VERILOG_FILE sync_edge_detector.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY "/media/Data/Learning/Studia/Semestr III/TC/Project/out"
+set_global_assignment -name VERILOG_FILE 4digitSeg.v

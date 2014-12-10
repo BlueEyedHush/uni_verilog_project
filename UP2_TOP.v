@@ -90,9 +90,15 @@ output [15:0] MATRIX_COL;
 */
 
 //let's save some energy
+assign FLEX_DIGIT_1[6:0] = 7'b1111111;
 assign FLEX_DIGIT_1_DP = 1;
-assign MATRIX_ROW = 8'hFF;
-assign MATRIX_COL = 16'hFFFF;
+assign FLEX_DIGIT_2[6:0] = 7'b1111111;
+assign FLEX_DIGIT_2_DP = 1;
+assign DISP1_DP = 1;
+assign DISP2_DP = 1;
+assign DISP3_DP = 1;
+assign DISP4_DP = 1;
+assign LED[15:0] = 16'hFFFF;
 
 wire bt1;
 wire bt2;
@@ -107,24 +113,30 @@ timer_main tmain(
 	.button1(bt1),
 	.button2(bt2),
 	.clk(MCLK),
-	.digOut(disp_data)
+	.digOut(disp_data[15:0])
 );
 
-dec7seg x1(
-	.data_in(disp_data[15:12]),
-	.seg(DISP1[6:0])
+screen4digitSeg segScreen (
+	.data_in(disp_data[15:0]),
+	.disp_out({DISP1[6:0], DISP2[6:0], DISP3[6:0], DISP4[6:0]})
 );
-dec7seg x2(
-	.data_in(disp_data[11:8]),
-	.seg(DISP2[6:0])
+
+wire [127:0] screenConnector;
+arrayMaker charerizer (
+	.currentTime(disp_data[15:0]),
+	.data_t(screenConnector[127:0])
 );
-dec7seg x3(
-	.data_in(disp_data[7:4]),
-	.seg(DISP3[6:0])
+
+wire screenClk;
+prescaler #(.DESIRED_FREQ(60*8)) refreshClk(
+	.clkin(MCLK),
+	.clkout(screenClk)
 );
-dec7seg x4(
-	.data_in(disp_data[3:0]),
-	.seg(DISP4[6:0])
+screen16x8diode diodeScreen (
+	.clk(screenClk),
+	.data(screenConnector[127:0]),
+	.columns(MATRIX_COL[15:0]),
+	.rows(MATRIX_ROW[7:0])
 );
 
 debouncer startStop(

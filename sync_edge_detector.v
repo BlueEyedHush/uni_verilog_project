@@ -20,13 +20,13 @@ begin
 	t2 <= t1;
 	t1 <= in;
 	
-	if(t1 < t2) begin
-		rise <= 1;
-		fall <= 0;
-	end
-	else if(t2 > t1) begin
+	if(t2 > t1) begin
 		rise <= 0;
 		fall <= 1;
+	end
+	else if(t2 < t1) begin
+		rise <= 1;
+		fall <= 0;
 	end
 	else begin
 		rise <= 0;
@@ -53,8 +53,8 @@ end
 
 always @ (posedge clk)
 begin
-	t2[2:0] <= t1[2:0];
-	t1[2:0] <= in[2:0];
+	t2 <= t1;
+	t1 <= in;
 	
 	if(t1 != t2)
 		changed <= 1;

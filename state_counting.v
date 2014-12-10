@@ -6,6 +6,7 @@ module state_counting (
 	input pause,
 	input reset,
 	input slowclk,
+	input clk,
 	input [15:0] initialClockValue,
 	input [2:0] currentState,
 	
@@ -18,6 +19,7 @@ parameter stateID = 0;
 initial
 begin
 	paused = 0;
+	rAck = 0;
 end
 
 // display
@@ -29,17 +31,61 @@ assign digitsOut[15:0] = {min1, min0, sec1, sec0};
 
 // stopping
 reg paused;
-always @ (posedge pause)
-	paused = !paused;
+always @ (posedge pause) 
+begin
+	if(currentState == stateID)
+		paused = !paused;
+		
+	if(state_changed)
+		paused = 0;
+end
+
+// reseting
+reg resetted;
+reg rAck;
+always @ (posedge clk)
+begin
+	if(currentState == stateID) begin
+		if(reset == 1) begin
+			resetted <= 1;
+		end
+		else if(rAck == 1) begin
+			resetted <= 0;
+		end
+	end
+end
+
+wire state_changed;
+sync_edge_detector_3 state_change_detect(
+	.in(currentState[2:0]),
+	.clk(clk),
+	.changed(state_changed)
+);
 
 always @ (posedge slowclk) 
 begin
 	if(currentState == stateID && !paused) begin
-		if(reset) begin
+		/*
+		jesli w poprzednim cyklu wyslalismy Ack, tutaj je zerujemy
+		tamten zegar jest wielokrotnie szybszy od tego, wiec
+		z pewnoscia zdazyl juz zauwazyc
+		*/
+		if(rAck == 1)
+			rAck <= 0;
+		
+		if(state_changed) begin
 			min1 <= initialClockValue[15:12];
 			min0 <= initialClockValue[11:8];
 			sec1 <= initialClockValue[7:4];
 			sec0 <= initialClockValue[3:0];
+		end
+		
+		if(resetted || state_changed) begin
+			min1 <= initialClockValue[15:12];
+			min0 <= initialClockValue[11:8];
+			sec1 <= initialClockValue[7:4];
+			sec0 <= initialClockValue[3:0];
+			rAck <= 1;
 		end
 		else begin
 			if(sec0 <= 0) begin

@@ -9,8 +9,8 @@ module multiplexer2_1(
 always @ (sel or A or B)
 begin 
 	case(sel)
-		0: out[15:0] <= A[15:0];
-		1: out[15:0] <= B[15:0];
+		0: out <= A;
+		1: out <= B;
 	endcase
 end	
 

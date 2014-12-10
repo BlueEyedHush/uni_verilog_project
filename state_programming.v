@@ -41,7 +41,7 @@ begin
 		if(state_changed) begin
 			min[7:0] <= 8'h00;
 			sec[7:0] <= 8'h00;
-			programmed <= 1;
+			programmed <= 0;
 		end 
 		
 		if(toggle) begin
@@ -51,7 +51,7 @@ begin
 			endcase
 		end
 		
-		begin
+		if(increase) begin
 			case(currentlyModified)
 				0: begin
 					if(sec >= 59)
