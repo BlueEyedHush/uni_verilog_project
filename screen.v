@@ -22,14 +22,14 @@ begin
 	end
 	
 	case(number)
-		1   : columns[15:0] <= data[127:112];
-		2   : columns[15:0] <= data[111:96];
-		4   : columns[15:0] <= data[95:80];
-		8   : columns[15:0] <= data[79:64];
-		16  : columns[15:0] <= data[63:48];
-		32  : columns[15:0] <= data[47:32];
-		64  : columns[15:0] <= data[31:16];
-		128 : columns[15:0] <= data[15:0];
+		1   : columns[15:0] <= ~data[127:112];
+		2   : columns[15:0] <= ~data[111:96];
+		4   : columns[15:0] <= ~data[95:80];
+		8   : columns[15:0] <= ~data[79:64];
+		16  : columns[15:0] <= ~data[63:48];
+		32  : columns[15:0] <= ~data[47:32];
+		64  : columns[15:0] <= ~data[31:16];
+		128 : columns[15:0] <= ~data[15:0];
 	endcase
 	
 	rows <= number;
