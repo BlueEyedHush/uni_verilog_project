@@ -16,9 +16,13 @@ end
 
 always @(posedge clk)
 begin
-	if(number > 129)
+	if(number >= 128)
 	begin
 		number <= 1;
+		rows <= ~number;
+	end else begin
+		rows <= ~number;
+		number <= number*2;
 	end
 	
 	case(number)
@@ -31,8 +35,5 @@ begin
 		64  : columns[15:0] <= ~data[31:16];
 		128 : columns[15:0] <= ~data[15:0];
 	endcase
-	
-	rows <= number;
-	number <= number * 2;
 end
 endmodule
