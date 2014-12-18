@@ -98,7 +98,7 @@ assign DISP1_DP = 1;
 assign DISP2_DP = 1;
 assign DISP3_DP = 1;
 assign DISP4_DP = 1;
-assign LED[15:0] = 16'hFFFF;
+//assign LED[15:0] = 16'hFFFF;
 
 wire bt1;
 wire bt2;
@@ -108,10 +108,38 @@ wire [15:0] disp_data;
 /* ToDo
 integrate output_mod_flicker
 */
+wire bt3;
+debouncer stdeb(
+	.button(BT[2]),
+	.clk(MCLK),
+	.bt_act(bt3)
+);
+
+wire bt3rise;
+wire bt3fall;
+sync_edge_detector_1 bt3syncer(
+	.in(bt3),
+	.clk(MCLK),
+	.rise(bt3rise),
+	.fall(bt3fall)
+);
+
+reg [2:0] st;
+assign LED[2:0] = st[2:0];
+
+always @ (posedge MCLK)
+begin
+	if(bt3rise)
+		if(st == 0) 
+			st <= 1;
+		else 
+			st <= 0;
+end
 
 timer_main tmain(
 	.button1(bt1),
 	.button2(bt2),
+	.state(st),
 	.clk(MCLK),
 	.digOut(disp_data[15:0])
 );

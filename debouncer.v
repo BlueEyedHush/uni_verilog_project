@@ -9,7 +9,7 @@ module debouncer #(
 parameter F_CLK = 25175000;
 
 //automatically calculated, do not modify manually
-integer D_TIME = (REACTION_TIME/1000)*F_CLK;
+parameter integer D_TIME = F_CLK*REACTION_TIME/1000;
 
 reg [31:0] counter;
 

@@ -1,6 +1,7 @@
 module timer_main (
 	input button1, // start/stop/start programming/toggle
 	input button2, // increaser/reset
+	input state,
 	input clk,
 	
 	output [15:0] digOut
@@ -8,7 +9,7 @@ module timer_main (
 
 parameter ST_CH_AFT = 5;
 
-reg state;
+//reg state;
 
 // slowclk
 wire slowclk;
@@ -21,6 +22,7 @@ wire bt1rise;
 wire bt1fall;
 sync_edge_detector_1 bt1syncer(
 	.in(button1),
+	.clk(clk),
 	.rise(bt1rise),
 	.fall(bt1fall)
 );
@@ -29,6 +31,7 @@ wire bt2rise;
 wire bt2fall;
 sync_edge_detector_1 bt2syncer(
 	.in(button2),
+	.clk(clk),
 	.rise(bt2rise),
 	.fall(bt2fall)
 );
@@ -38,6 +41,7 @@ reg countdownStarted;
 reg [31:0] stateSwitchCountdown;
 wire programmingFinished;
 
+/*
 always @ (posedge clk)
 begin
 	if(state == 0) begin
@@ -59,7 +63,9 @@ begin
 			state <= 0;
 	end
 end
+*/
 
+/*
 always @ (posedge slowclk)
 begin
 	if(countdownStarted) begin
@@ -69,11 +75,13 @@ begin
 			stateSwitchCountdown <= ST_CH_AFT+1;
 	end
 end
+*/
 
 // states
 wire [15:0] dOutCnt;
 wire [15:0] dOutProg;
 wire [15:0] toFlicker;
+
 
 state_counting cnt(
 	.pause(bt1rise), 
@@ -84,21 +92,25 @@ state_counting cnt(
 	.currentState(state), 
 	.digitsOut(dOutCnt), 
 	.finished());
-	
+
 state_programming stt(
 	.toggle(bt1rise),
 	.increase(bt2rise),
 	.currentState(state),
 	.clk(clk),
 	.digitsOut(dOutProg),
-	.programmed(programmingFinished));
+	.programmed()
+	//.programmed(programmingFinished)
+);
 	
 multiplexer2_1 outselect(
 	.A(dOutCnt),
 	.B(dOutProg),
 	.sel(state),
-	.out(toFlicker));
-	
+	.out(digOut)
+	//.out(toFlicker)
+);
+/*	
 output_mod_flicker flicker(
 	.digits_in(toFlicker),
 	.clk(clk),
@@ -106,5 +118,5 @@ output_mod_flicker flicker(
 	
 	.digits_out(digOut)
 );
-	
+*/
 endmodule

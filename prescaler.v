@@ -6,8 +6,8 @@ module prescaler #(
 );
 
 parameter F_OSC = 25175000;
-integer CountLimit = F_OSC/DESIRED_FREQ;
-integer HalfCountLimit = F_OSC/(2*DESIRED_FREQ);
+parameter integer CountLimit = F_OSC/DESIRED_FREQ;
+parameter integer HalfCountLimit = CountLimit/2;
 
 reg [31:0] counter;
 
