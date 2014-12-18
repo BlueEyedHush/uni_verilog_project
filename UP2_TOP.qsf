@@ -38,10 +38,10 @@
 
 set_global_assignment -name FAMILY FLEX10K
 set_global_assignment -name DEVICE "EPF10K70RC240-4"
-set_global_assignment -name TOP_LEVEL_ENTITY UP2_TOP
+set_global_assignment -name TOP_LEVEL_ENTITY state_counting
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:44:19  OCTOBER 26, 2014"
-set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -178,3 +178,9 @@ set_global_assignment -name VERILOG_FILE timer_main.v
 set_global_assignment -name VERILOG_FILE sync_edge_detector.v
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY "/media/Data/Learning/Studia/Semestr III/TC/Project/out"
 set_global_assignment -name VERILOG_FILE 4digitSeg.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE waveforms/state_programming_01.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name END_TIME "300 ns"
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_global_assignment -name VECTOR_WAVEFORM_FILE waveforms/state_counting_isInitialValueCorrectlyCopied.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE waveforms/state_counting_isInitialValueCorrectlyCopied.vwf

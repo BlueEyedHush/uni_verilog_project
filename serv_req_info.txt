@@ -1,0 +1,154 @@
+<internal_error>
+	<executable>quartus</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0xfffffffff6a5448a: gdiuser32 + 0x1cc48a (MwWMAllowsToTakeFocus + 0x8a)
+	0xfffffffff6a5486a: gdiuser32 + 0x1cc86a (MwWmProtocolMessage + 0x1ca)
+	0xfffffffff6a1a581: gdiuser32 + 0x192581 (MwEventSideEffects + 0xf31)
+	0xfffffffff6a1b17d: gdiuser32 + 0x19317d (MwFindMatchingEventInQueue + 0x23d)
+	0xfffffffff6a1f1c3: gdiuser32 + 0x1971c3 (MwGetMessageThreads + 0x643)
+	0xfffffffff6a1fbe0: gdiuser32 + 0x197be0 (GetMessageA + 0x60)
+	0xfffffffff713cfaa: mfc400s + 0x12bfaa (_ZN10CWinThread11PumpMessageEv + 0x3a)
+	0xfffffffff70deb0a: mfc400s + 0xcdb0a (_ZN4CWnd12RunModalLoopEm + 0x1da)
+	0xfffffffff710d848: mfc400s + 0xfc848 (_ZN7CDialog7DoModalEv + 0x328)
+	0xfffffffff024b61b: edt_wed + 0x14a61b (_ZN18WED_NODE_NAME_VIEW12OnInsertNodeEv + 0xd7)
+	0xfffffffff7122977: mfc400s + 0x111977 (_Z18_AfxDispatchCmdMsgP10CCmdTargetjiMS_FvvEPvjP18AFX_CMDHANDLERINFO + 0x237)
+	0xfffffffff7122a77: mfc400s + 0x111a77 (_ZN10CCmdTarget8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0xc7)
+	0xfffffffff712a391: mfc400s + 0x119391 (_ZN5CView8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x41)
+	0xfffffffff024d07b: edt_wed + 0x14c07b (_ZN18WED_NODE_NAME_VIEW22handle_command_messageEjiPvP18AFX_CMDHANDLERINFO + 0x2d)
+	0xfffffffff01d5548: edt_wed + 0xd4548 (_ZN15WED_CHILD_FRAME8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x43a)
+	0xfffffffff70df8e5: mfc400s + 0xce8e5 (_ZN4CWnd9OnCommandEjl + 0xb5)
+	0xfffffffff70e1df9: mfc400s + 0xd0df9 (_ZN9CFrameWnd9OnCommandEjl + 0x69)
+	0xfffffffff70dc3cf: mfc400s + 0xcb3cf (_ZN4CWnd8OnWndMsgEjjlPl + 0x2cf)
+	0x092cdfcd: quartus + 0x1285fcd (_ZN15AFC_CHILD_FRAME8OnWndMsgEjjlPl + 0x8f)
+	0xfffffffff70dbd59: mfc400s + 0xcad59 (_ZN4CWnd10WindowProcEjjl + 0x39)
+	0xfffffffff70e0623: mfc400s + 0xcf623 (_Z14AfxCallWndProcP4CWndP6HWND__jjl + 0xc3)
+	0xfffffffff70e10c3: mfc400s + 0xd00c3 (_Z10AfxWndProcP6HWND__jjl + 0x53)
+	0xfffffffff70d8e9b: mfc400s + 0xc7e9b (_Z14AfxWndProcBaseP6HWND__jjl + 0x5b)
+	0xfffffffff6a08a51: gdiuser32 + 0x180a51 (MwCallCallWndProc + 0x171)
+	0xfffffffff6a15891: gdiuser32 + 0x18d891 (MwIDispatchMessage + 0xa1)
+	0xfffffffff6a15a4a: gdiuser32 + 0x18da4a (DispatchMessageA + 0x4a)
+	0xfffffffff713cfed: mfc400s + 0x12bfed (_ZN10CWinThread11PumpMessageEv + 0x7d)
+	0xfffffffff713caea: mfc400s + 0x12baea (_ZN10CWinThread3RunEv + 0x8a)
+	0xfffffffff713eb59: mfc400s + 0x12db59 (_ZN7CWinApp3RunEv + 0x29)
+	0x092dceab: quartus + 0x1294eab (_ZN7AFC_APP19win_app_run_wrapperEPv + 0x1d)
+	0xfffffffff770d0f9: ccl_thr_win32 + 0xe0f9 (thr_final_wrapper + 0xf)
+	0x089c2982: quartus + 0x97a982 (_Z18mem_thread_wrapperPFPvS_ES_ + 0xd2)
+	0x0ce516c7: quartus + 0x4e096c7 (_Z18err_thread_wrapperPFPvS_ES_ + 0x29)
+	0xfffffffff770d187: ccl_thr_win32 + 0xe187 (thr_thread_wrapper + 0x2c)
+	0x092dd012: quartus + 0x1295012 (_ZN7AFC_APP3RunEv + 0x160)
+	0xfffffffff70ed2ed: mfc400s + 0xdc2ed (_Z10AfxWinMainP11HINSTANCE__S0_Pci + 0xad)
+	0x0ce68553: quartus + 0x4e20553 (WinMain + 0x53)
+	0x089af415: quartus + 0x967415 (main + 0x9d)
+	0xfffffffff533cb73: c.so.6 + 0x19b73 (__libc_start_main + 0xf3)
+	0x088e2b01: quartus + 0x89ab01 (_ZN13SECControlBar17CalcDynamicLayoutEim + 0x91)
+	</callstack>
+	<error>Current editor: WED</error>
+	<date>Thu Dec 18 21:06:34 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>Segment Violation at 0xc0c408
+Current editor: WED
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0xfffffffff6a1148a: gdiuser32 + 0x1cc48a (MwWMAllowsToTakeFocus + 0x8a)
+	0xfffffffff6a1186a: gdiuser32 + 0x1cc86a (MwWmProtocolMessage + 0x1ca)
+	0xfffffffff69d7581: gdiuser32 + 0x192581 (MwEventSideEffects + 0xf31)
+	0xfffffffff69d817d: gdiuser32 + 0x19317d (MwFindMatchingEventInQueue + 0x23d)
+	0xfffffffff69dc1c3: gdiuser32 + 0x1971c3 (MwGetMessageThreads + 0x643)
+	0xfffffffff69dcb12: gdiuser32 + 0x197b12 (PeekMessageA + 0xb2)
+	0xfffffffff709ba03: mfc400s + 0xcda03 (_ZN4CWnd12RunModalLoopEm + 0xd3)
+	0xfffffffff70ca848: mfc400s + 0xfc848 (_ZN7CDialog7DoModalEv + 0x328)
+	0xfffffffff004461b: edt_wed + 0x14a61b (_ZN18WED_NODE_NAME_VIEW12OnInsertNodeEv + 0xd7)
+	0xfffffffff70df977: mfc400s + 0x111977 (_Z18_AfxDispatchCmdMsgP10CCmdTargetjiMS_FvvEPvjP18AFX_CMDHANDLERINFO + 0x237)
+	0xfffffffff70dfa77: mfc400s + 0x111a77 (_ZN10CCmdTarget8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0xc7)
+	0xfffffffff70e7391: mfc400s + 0x119391 (_ZN5CView8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x41)
+	0xfffffffff004607b: edt_wed + 0x14c07b (_ZN18WED_NODE_NAME_VIEW22handle_command_messageEjiPvP18AFX_CMDHANDLERINFO + 0x2d)
+	0xffffffffeffce548: edt_wed + 0xd4548 (_ZN15WED_CHILD_FRAME8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x43a)
+	0xfffffffff709c8e5: mfc400s + 0xce8e5 (_ZN4CWnd9OnCommandEjl + 0xb5)
+	0xfffffffff709edf9: mfc400s + 0xd0df9 (_ZN9CFrameWnd9OnCommandEjl + 0x69)
+	0xfffffffff70993cf: mfc400s + 0xcb3cf (_ZN4CWnd8OnWndMsgEjjlPl + 0x2cf)
+	0x092cdfcd: quartus + 0x1285fcd (_ZN15AFC_CHILD_FRAME8OnWndMsgEjjlPl + 0x8f)
+	0xfffffffff7098d59: mfc400s + 0xcad59 (_ZN4CWnd10WindowProcEjjl + 0x39)
+	0xfffffffff709d623: mfc400s + 0xcf623 (_Z14AfxCallWndProcP4CWndP6HWND__jjl + 0xc3)
+	0xfffffffff709e0c3: mfc400s + 0xd00c3 (_Z10AfxWndProcP6HWND__jjl + 0x53)
+	0xfffffffff7095e9b: mfc400s + 0xc7e9b (_Z14AfxWndProcBaseP6HWND__jjl + 0x5b)
+	0xfffffffff69c5a51: gdiuser32 + 0x180a51 (MwCallCallWndProc + 0x171)
+	0xfffffffff69d2891: gdiuser32 + 0x18d891 (MwIDispatchMessage + 0xa1)
+	0xfffffffff69d2a4a: gdiuser32 + 0x18da4a (DispatchMessageA + 0x4a)
+	0xfffffffff70f9fed: mfc400s + 0x12bfed (_ZN10CWinThread11PumpMessageEv + 0x7d)
+	0xfffffffff70f9aea: mfc400s + 0x12baea (_ZN10CWinThread3RunEv + 0x8a)
+	0xfffffffff70fbb59: mfc400s + 0x12db59 (_ZN7CWinApp3RunEv + 0x29)
+	0x092dceab: quartus + 0x1294eab (_ZN7AFC_APP19win_app_run_wrapperEPv + 0x1d)
+	0xfffffffff76ca0f9: ccl_thr_win32 + 0xe0f9 (thr_final_wrapper + 0xf)
+	0x089c2982: quartus + 0x97a982 (_Z18mem_thread_wrapperPFPvS_ES_ + 0xd2)
+	0x0ce516c7: quartus + 0x4e096c7 (_Z18err_thread_wrapperPFPvS_ES_ + 0x29)
+	0xfffffffff76ca187: ccl_thr_win32 + 0xe187 (thr_thread_wrapper + 0x2c)
+	0x092dd012: quartus + 0x1295012 (_ZN7AFC_APP3RunEv + 0x160)
+	0xfffffffff70aa2ed: mfc400s + 0xdc2ed (_Z10AfxWinMainP11HINSTANCE__S0_Pci + 0xad)
+	0x0ce68553: quartus + 0x4e20553 (WinMain + 0x53)
+	0x089af415: quartus + 0x967415 (main + 0x9d)
+	0xfffffffff52f9b73: c.so.6 + 0x19b73 (__libc_start_main + 0xf3)
+	0x088e2b01: quartus + 0x89ab01 (_ZN13SECControlBar17CalcDynamicLayoutEim + 0x91)
+	</callstack>
+	<error>Current editor: WED, RPW</error>
+	<date>Thu Dec 18 21:34:52 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>Segment Violation at 0x83c8
+Current editor: WED, RPW
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00008080:
+	0xfffffffff7194977: mfc400s + 0x111977 (_Z18_AfxDispatchCmdMsgP10CCmdTargetjiMS_FvvEPvjP18AFX_CMDHANDLERINFO + 0x237)
+	0xfffffffff7194a77: mfc400s + 0x111a77 (_ZN10CCmdTarget8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0xc7)
+	0xfffffffff71975f1: mfc400s + 0x1145f1 (_ZN9CDocument8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x41)
+	0xfffffffff71e3354: mfc400s + 0x160354 (_ZN12COleDocument8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0x64)
+	0xfffffffff719c3f0: mfc400s + 0x1193f0 (_ZN5CView8OnCmdMsgEjiPvP18AFX_CMDHANDLERINFO + 0xa0)
+	0xfffffffff71518e5: mfc400s + 0xce8e5 (_ZN4CWnd9OnCommandEjl + 0xb5)
+	0xfffffffff714e3cf: mfc400s + 0xcb3cf (_ZN4CWnd8OnWndMsgEjjlPl + 0x2cf)
+	0x092aa4cb: quartus + 0x12624cb (_ZN8AFC_VIEW8OnWndMsgEjjlPl + 0x41)
+	0xfffffffff714dd59: mfc400s + 0xcad59 (_ZN4CWnd10WindowProcEjjl + 0x39)
+	0xfffffffff7152623: mfc400s + 0xcf623 (_Z14AfxCallWndProcP4CWndP6HWND__jjl + 0xc3)
+	0xfffffffff71530c3: mfc400s + 0xd00c3 (_Z10AfxWndProcP6HWND__jjl + 0x53)
+	0xfffffffff714ae9b: mfc400s + 0xc7e9b (_Z14AfxWndProcBaseP6HWND__jjl + 0x5b)
+	0xfffffffff6a7aa51: gdiuser32 + 0x180a51 (MwCallCallWndProc + 0x171)
+	0xfffffffff6a87891: gdiuser32 + 0x18d891 (MwIDispatchMessage + 0xa1)
+	0xfffffffff6a87a4a: gdiuser32 + 0x18da4a (DispatchMessageA + 0x4a)
+	0xfffffffff71aefed: mfc400s + 0x12bfed (_ZN10CWinThread11PumpMessageEv + 0x7d)
+	0xfffffffff71aeaea: mfc400s + 0x12baea (_ZN10CWinThread3RunEv + 0x8a)
+	0xfffffffff71b0b59: mfc400s + 0x12db59 (_ZN7CWinApp3RunEv + 0x29)
+	0x092dceab: quartus + 0x1294eab (_ZN7AFC_APP19win_app_run_wrapperEPv + 0x1d)
+	0xfffffffff777f0f9: ccl_thr_win32 + 0xe0f9 (thr_final_wrapper + 0xf)
+	0x089c2982: quartus + 0x97a982 (_Z18mem_thread_wrapperPFPvS_ES_ + 0xd2)
+	0x0ce516c7: quartus + 0x4e096c7 (_Z18err_thread_wrapperPFPvS_ES_ + 0x29)
+	0xfffffffff777f187: ccl_thr_win32 + 0xe187 (thr_thread_wrapper + 0x2c)
+	0x092dd012: quartus + 0x1295012 (_ZN7AFC_APP3RunEv + 0x160)
+	0xfffffffff715f2ed: mfc400s + 0xdc2ed (_Z10AfxWinMainP11HINSTANCE__S0_Pci + 0xad)
+	0x0ce68553: quartus + 0x4e20553 (WinMain + 0x53)
+	0x089af415: quartus + 0x967415 (main + 0x9d)
+	0xfffffffff53aeb73: c.so.6 + 0x19b73 (__libc_start_main + 0xf3)
+	0x088e2b01: quartus + 0x89ab01 (_ZN13SECControlBar17CalcDynamicLayoutEim + 0x91)
+	</callstack>
+	<error>Current editor: SFW, RPW</error>
+	<date>Thu Dec 18 22:09:49 2014</date>
+	<version>Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version</version>
+	<full_error>Segment Violation at 0x8080
+Current editor: SFW, RPW
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version </full_error>
+</internal_error>
+

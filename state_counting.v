@@ -60,7 +60,7 @@ end
 wire state_changed;
 sync_edge_detector_3 state_change_detect(
 	.in(currentState[2:0]),
-	.clk(clk),
+	.clk(slowclk),
 	.changed(state_changed)
 );
 
@@ -78,11 +78,11 @@ begin
 		*/
 		
 		if(state_changed) begin
-			min1 <= initialClockValue[15:12];
+			min1 <=	initialClockValue[15:12];
 			min0 <= initialClockValue[11:8];
 			sec1 <= initialClockValue[7:4];
 			sec0 <= initialClockValue[3:0];
-		end
+		end 
 		/*
 		if(resetted || state_changed) begin
 			min1 <= initialClockValue[15:12];
@@ -93,6 +93,8 @@ begin
 		end
 		else 
 		begin*/
+		
+		/*
 		if(sec0 <= 0) begin
 			if(sec1 <= 0) begin
 				if(min0 <= 0) begin
@@ -117,6 +119,8 @@ begin
 		else begin
 			sec0 <= sec0 - 1;
 		end
+		*/
+		
 		//end
 	end
 end
